@@ -1,0 +1,47 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.6.3)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - XBToolsKit (0.1.0):
+    - AFNetworking
+    - CocoaAsyncSocket
+    - FMDB
+
+DEPENDENCIES:
+  - XBToolsKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - CocoaAsyncSocket
+    - FMDB
+
+EXTERNAL SOURCES:
+  XBToolsKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  XBToolsKit: 3e148bc0de83fb8b07f4481bc9107967550a72f4
+
+PODFILE CHECKSUM: 9d934ab5c6b8efad64e8fa086e0cd42a07743e24
+
+COCOAPODS: 1.8.3

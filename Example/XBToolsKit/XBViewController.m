@@ -7,6 +7,8 @@
 //
 
 #import "XBViewController.h"
+#import "XBCoreDataManager.h"
+
 
 @interface XBViewController ()
 

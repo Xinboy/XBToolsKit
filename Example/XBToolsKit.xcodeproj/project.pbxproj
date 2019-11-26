@@ -37,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1307B11B431F20E9A29B17F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		16EF583FBB3CF079DF7D392B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1307B11B431F20E9A29B17F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		16EF583FBB3CF079DF7D392B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1A645A8F48A2570206049AE6 /* Pods_XBToolsKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBToolsKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2461B10445B6F2DB3F5D20EB /* Pods-XBToolsKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBToolsKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XBToolsKit_Tests/Pods-XBToolsKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		27C32415F0994ED6671B55B7 /* Pods-XBToolsKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBToolsKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XBToolsKit_Example/Pods-XBToolsKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		386EC6BA8E49D5E9A9D66CD3 /* Pods_XBToolsKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBToolsKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		412F2005179F785F3AF01D55 /* XBToolsKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XBToolsKit.podspec; path = ../XBToolsKit.podspec; sourceTree = "<group>"; };
+		412F2005179F785F3AF01D55 /* XBToolsKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XBToolsKit.podspec; path = ../XBToolsKit.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XBToolsKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBToolsKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -248,6 +248,7 @@
 				ORGANIZATIONNAME = Xinboy;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = 5D9A64VR86;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -257,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -321,21 +323,23 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-XBToolsKit_Example/Pods-XBToolsKit_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-XBToolsKit_Example/Pods-XBToolsKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/XBToolsKit/XBToolsKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XBToolsKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XBToolsKit_Example/Pods-XBToolsKit_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XBToolsKit_Example/Pods-XBToolsKit_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FAF31BDA5C253EA77278466C /* [CP] Check Pods Manifest.lock */ = {
@@ -500,8 +504,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XBToolsKit/XBToolsKit-Prefix.pch";
 				INFOPLIST_FILE = "XBToolsKit/XBToolsKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.XBToolsKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -515,8 +520,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XBToolsKit/XBToolsKit-Prefix.pch";
 				INFOPLIST_FILE = "XBToolsKit/XBToolsKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.XBToolsKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -527,6 +533,8 @@
 			baseConfigurationReference = 2461B10445B6F2DB3F5D20EB /* Pods-XBToolsKit_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				DEVELOPMENT_TEAM = 5D9A64VR86;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -551,6 +559,8 @@
 			baseConfigurationReference = D9EE6D74BE7D72E713850FD4 /* Pods-XBToolsKit_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				DEVELOPMENT_TEAM = 5D9A64VR86;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

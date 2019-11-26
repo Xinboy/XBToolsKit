@@ -1,0 +1,6 @@
+framework module XBToolsKit {
+  umbrella header "XBToolsKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

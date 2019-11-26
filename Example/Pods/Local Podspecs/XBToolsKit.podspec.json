@@ -1,0 +1,37 @@
+{
+  "name": "XBToolsKit",
+  "version": "0.1.0",
+  "summary": "工具类组件.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Xinboy/XBToolsKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Xinboy": "xinbo.hong@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Xinboy/XBToolsKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XBToolsKit/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "FMDB": [
+
+    ],
+    "CocoaAsyncSocket": [
+
+    ]
+  }
+}
