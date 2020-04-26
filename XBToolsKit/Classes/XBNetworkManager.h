@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XBNetworkManager : NSObject
 
+- (void)uploadOperation:(NSArray *)localPathArray;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,6 +1,6 @@
 {
   "name": "XBToolsKit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "工具类组件.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Xinboy/XBToolsKit",
@@ -13,12 +13,15 @@
   },
   "source": {
     "git": "https://github.com/Xinboy/XBToolsKit.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "XBToolsKit/Classes/**/*",
+  "source_files": [
+    "XBToolsKit/Classes/**/*",
+    "XBToolsKit/ThridRepo/**/*"
+  ],
   "frameworks": [
     "UIKit",
     "MapKit"

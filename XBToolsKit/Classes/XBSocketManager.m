@@ -6,7 +6,7 @@
 //  Copyright © 2018年 Xinbo. All rights reserved.
 //
 
-#import "SocketManager.h"
+#import "XBSocketManager.h"
 #import <CocoaAsyncSocket/GCDAsyncSocket.h>
 
 
